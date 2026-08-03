@@ -28,8 +28,6 @@ Ce projet est une application de bureau simple développée en Python qui permet
 ### Prérequis
 
 1.  **Clé API :** Obtenez une clé API gratuite auprès d'OpenWeatherMap.
-    API_KEY = "VOTRE_CLÉ_API_ICI"
-    ```
 
 ### Étapes
 
@@ -40,9 +38,13 @@ Ce projet est une application de bureau simple développée en Python qui permet
     ```
 2.  **Installer les dépendances :**
     ```bash
-    pip install requests
+    pip install requests customtkinter pillow
     ```
-3.  **Lancer l'application :**
+3.  **Définir la clé API** via une variable d'environnement (jamais en dur dans le code) :
+    ```bash
+    export OPENWEATHER_API_KEY="votre_clé_api"
+    ```
+4.  **Lancer l'application :**
     ```bash
     python meteo_app.py
     ```
